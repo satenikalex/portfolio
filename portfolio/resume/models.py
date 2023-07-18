@@ -1,5 +1,8 @@
 from django.db import models
 from django.core.validators import MaxValueValidator, MinValueValidator, URLValidator, EmailValidator
+from django.contrib.auth import get_user_model
+
+User = get_user_model()
 
 # Create your models here.
 
@@ -119,3 +122,5 @@ class Testimonial(models.Model):
     def __str__(self):
         return f"{self.name}, {self.job_position}, {self.created_on}"
 
+class Personal(models.Model):
+    user = models.ForeignKey(User, on_delete=models.CASCADE, null=True, blank=True)
