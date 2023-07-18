@@ -25,7 +25,7 @@ def home(request):
         "New_skills": New_skills,
         "social_links": social_links,
         "personal_info": personal_info,
-        "infi": info,
+        "info": info,
         "services": services,
         "testimonials": testimonials,
         
