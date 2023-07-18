@@ -28,6 +28,7 @@ def home(request):
         "infi": info,
         "services": services,
         "testimonials": testimonials,
+        "Personal": Personal,
 
     }
 
