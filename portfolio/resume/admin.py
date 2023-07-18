@@ -1,5 +1,5 @@
 from django.contrib import admin
-from .models import Education, New_Skill, Experience, Language, SocialLink, Personal_info, Info, Service, Testimonial, Skill
+from .models import Education, New_Skill, Experience, Language, SocialLink, Personal_info, Info, Service, Testimonial, Skill, Personal
 
 
 
@@ -61,5 +61,5 @@ admin.site.register(Info, InfoAdmin)
 admin.site.register(SocialLink, SocialLinkAdmin)
 admin.site.register(Service, ServicekAdmin)
 admin.site.register(Testimonial, TestimonialAdmin)
-
+admin.site.register(Personal)
 
