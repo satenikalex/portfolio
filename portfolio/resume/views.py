@@ -1,5 +1,5 @@
 from django.shortcuts import render
-from .models import (Skill,Education,Experience,Language,New_Skill,SocialLink, Personal_info, Info,Service,Testimonial, Personal)
+from .models import (Skill,Education,Experience,Language,New_Skill,SocialLink, Personal_info, Info,Service,Testimonial)
 
 # Create your views here.
 
@@ -15,7 +15,7 @@ def home(request):
     info = Info.objects.first()
     services = Service.objects.all()
     testimonials = Testimonial.objects.all()
-    Personal = Personal.objects.get(user__username = 'Satenik')
+    
 
     data = {
         "skills": skills,
@@ -28,7 +28,7 @@ def home(request):
         "infi": info,
         "services": services,
         "testimonials": testimonials,
-        "Personal": Personal,
+        
 
     }
 
