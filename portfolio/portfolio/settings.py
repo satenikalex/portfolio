@@ -26,7 +26,7 @@ SECRET_KEY = 'django-insecure-wk7-wp)0u@z6i2&lo%5z6&(dg(+!6%hc)&6u6mnz8)x+(_s=sj
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ["satalex.pythonanywhere.com"]
+ALLOWED_HOSTS = ["satalex.pythonanywhere.com"], 
 
 
 # Application definition
